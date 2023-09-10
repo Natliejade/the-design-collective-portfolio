@@ -1,5 +1,6 @@
 ---
 layout: default
+banner_image: /images/plant.jpg
 team:
   - name: Greg
     bio: AKA 'Big Boss Coder'
@@ -13,6 +14,7 @@ team:
     bio: AKA 'Designer/part time model'
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et cum iste, ipsa porro quod molestiae esse harum quibusdam iure odit quae ipsum quia.
     profile_image: /images/profile-3.jpg
+about-video-id: tCZy8cAgBlM
 ---
 
 <!-- Opening banner  -->
@@ -49,8 +51,11 @@ team:
 
 
 <!---------------- Team Video section  -->
-<section class="padded bg-green center">
-    <h2> Watch our corny 'meet the team' video </h2>
-    <p> Feat. J-bomb the terrier </p>
-    <div class="embedtool"><iframe src="https://www.youtube.com/embed/tCZy8cAgBlM" frameborder="0" allowfullscreen></iframe></div>
+<section class="padded bg-green center" style="background-image: url('{{ page.banner_image }}');">
+    <h2 class="editable"> Watch our corny 'meet the team' video </h2>
+    <p class="emphasis editable"> Feat. J-bomb the terrier </p>
+
+    <div class=""padded-1>
+        <div class="embedtool"><iframe src="https://www.youtube.com/embed/{{ page.about-video-id }}" frameborder="0" allowfullscreen></iframe></div>
+    </div>
 </section>

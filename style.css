@@ -1,12 +1,10 @@
-/* 
-
+/*  ------------------- NOTES
     colors: 
     rust #c29880
     dark-rust: #a2745c
     green: #c29880
 
     og rust = #c29880;
-
 
 */
 
@@ -76,7 +74,7 @@ html {
     flex-direction: row-reverse;
 }
 
-/* Typography */
+/* ---------- Typography */
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -119,6 +117,11 @@ nav a {
 
 a:hover { color: #a2745c; }
 
+.emphasis {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 .button {
   text-decoration: none;
   border: 2px solid; 
@@ -140,7 +143,7 @@ a:hover { color: #a2745c; }
 
 
 
-/* Header & Footer  */
+/* -------------- Header & Footer  */
 
 header {
     padding: 2% 5%;
@@ -150,7 +153,7 @@ footer a:hover {
     color: #d3b4a2; 
 }
 
-/* Icon Grid Section  */
+/* ---------------- Icon Grid Section  */
 .icon-section img {
     max-width: 3rem;
     opacity: 0.8;
@@ -158,7 +161,7 @@ footer a:hover {
 }
 
 
-/* Background Images */
+/* --------------- Background Images */
 
 .bg-image {
     background-color:rgb(240,240,240); 
@@ -188,7 +191,7 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
-/* Responsive Video */
+/* ----------- Responsive Video */
 .embedtool {
     position: relative;
     height: 0;
@@ -211,7 +214,7 @@ footer a:hover {
     position: initial !important
 }
 
-
+/* --------MEDIA QUERIES ------ */
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
 
