@@ -153,6 +153,10 @@ footer a:hover {
     color: #d3b4a2; 
 }
 
+.fab {
+    font-size: 1.6rem;;
+}
+
 /* ---------------- Icon Grid Section  */
 .icon-section img {
     max-width: 3rem;
@@ -171,6 +175,7 @@ footer a:hover {
     background-image: url('/images/plant.jpg');
 }
 
+/* For circle (from square photo) */
 .profile-image {
     border-radius: 100%;
 }
