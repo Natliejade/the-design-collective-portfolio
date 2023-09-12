@@ -157,6 +157,10 @@ footer a:hover {
     font-size: 1.6rem;;
 }
 
+footer h2 {
+    margin-bottom: 2rem;;
+}
+
 /* ---------------- Icon Grid Section  */
 .icon-section img {
     max-width: 3rem;
@@ -236,6 +240,10 @@ footer a:hover {
     .bg-plant-2 {
         background-image: url('/images/plant-2-light.png');
         background-position: 45% 50%;
+    }
+
+    .fab {
+        font-size: 1.2rem;
     }
 
 }
