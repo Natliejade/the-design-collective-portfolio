@@ -44,10 +44,7 @@ html {
 .padded-l  { padding-left: 5%;    }
 .padded-r  { padding-right: 5%;   }
 
-.padded-sides-10 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
+.padded-b-2  { padding-bottom: 2rem;  }
 
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
@@ -286,6 +283,44 @@ footer h2 {
 
 .embedtool .fluid-vids {
     position: initial !important
+}
+
+/*----------------- Contact Form  */
+input,
+textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.4rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  border: 2px solid  #a2745c;
+  border-radius: 3px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #a2745c;
+}
+
+form .button {
+  text-decoration: none;
+  background-color: white;
+  border: 2px ssolid #a2745c;
+  color: #a2745c;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  text-align: right; 
+}
+
+form button:hover {
+  background-color: #a2745c;
+  color: white;
+  border: 2px solid #a2745c;
 }
 
 /* --------MEDIA QUERIES ------ */
