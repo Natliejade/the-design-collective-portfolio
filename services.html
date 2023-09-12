@@ -1,8 +1,69 @@
 ---
 layout: default
 title: Work with The Design Collective
+design:
+  - heading: Design.
+    description-1: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+    description-2: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+  - heading: Build.
+    description-1: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+    description-2: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+  - heading: Design & Build.
+    description-1: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+    description-2: We specialise in start-up web development, that starts small but can scale as your business scales. Using the latest in static custom code.
+features:
+  - title: Beautiful Designs
+    description: We specialise in start-up web development that starts small but can scale as your business scales. Using the lastest in static site custom code, we make things easy to you, so its one less thing to think about when building your business
+    featured_image: /images/placeholder-project.jpg
+  - title: Optimised Builds
+    description: We specialise in start-up web development that starts small but can scale as your business scales. Using the lastest in static site custom code, we make things easy to you, so its one less thing to think about when building your business
+    featured_image: /images/placeholder-project.jpg    
 ---
 
-<section>
-    SERVICES
+<!-------------- Hero Banner --------------->
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right">
+    <div class="col-6_sm-10">
+        <h2> Website design & development that grows with your business </h2>   
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+</section> 
+
+<!--------------- Grid Section ----------------->
+<section class="padded bg-green grid">
+
+    {% for item in page.design %}
+
+    <div class="col-4_sm-12 padded-2 padded-b">
+        <h3> {{item.heading}} </h3>
+        <p class="light-text"> {{item.description-1}}</p>
+        <p class="light-text"> {{item.description-2}} </p>
+    </div>
+
+    {% endfor %}
+
+    <div class="col-12 center">
+        <a href="/contact" class="button"> Get in touch! </a>
+    </div>
 </section>
+
+ <!---------------- Newsletter Banner ----------------->
+{% include newsletter-signup.html %}
+
+<!------------------ Portfolio section -->
+<section class="padded projects capped-width-l" id="projects">
+
+    {% for item in page.features %}
+
+    <div class="grid flex-flip-alternate">
+        <div class="col-5_sm-12-middle padded">
+            <div class="bg-image landscape" style="background-image: url('{{ item.featured_image }}')"></div>
+        </div>
+        <div class="col-7_sm-12-middle padded">
+            <h3> {{ item.title }} </h3>
+            <p> {{ item.description }} </p>
+        </div>
+    </div>
+
+    {% endfor %}    
+
+</section> 

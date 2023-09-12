@@ -3,14 +3,60 @@ layout: default
 title: The Design Collective Portfolio
 ---
 
+<!------------- Projects Section ------------------>
 <section class="padded bg-green grid">
-    <div class="col-7">
-            <h2> We design & create but if you have a design of your own, let us know!</h2>
-    <p> Our team is more than just co-workers, it's a family and when you work with us, you don't just get assigned a number, you join our family. </p>
+    <div class="col-9 light-text padded-b">
+        <h2> We design & create but if you have a design of your own, let us know!</h2>
+        <p> Our team is more than just co-workers, it's a family and when you work with us, you don't just get assigned a number, you join our family. </p>
     </div>
 
-    {%  for project in site.projects %}
+    {% for project in site.projects limit:5 offset:1 %}
+
+    <div class="col-7_sm-12-middle margin-b-2">
+        <div class="bg-image landscape" style="background-image: url('{{ project.featured_image }}')">
+        </div>
+    </div>
+    <div class="col-5_sm-12-middle padded-2">
+        <div>
+            <h3> {{ project.title }} </h3>
+        </div>
+        <div class="light-text">
+            <p> {{ project.description }} </p>
+            <p class="emphasis"><strong>Designed by: </strong> {{ project.design-by }}</p>
+            <p class="emphasis"><strong>Built by: </strong> {{ project.build-by }} </p>
+            <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
+        </div>
+    </div>
+    
+    {% endfor %}
+
+</section>
+
+ <!---------------- Newsletter Banner ----------------->
+{% include newsletter-signup.html %}
+
+<!--------------- Featured Project ----------------->
+<section class="padded center">
+    <h2> Featured Project </h2>
+        <div class="capped-width padded-1">
+    {% for project in site.projects limit:1 %}
+
+            <div class="bg-image landscape" 
+                style="background-image: url('{{ project.featured_image }}')"></div>
+            <div class="grid-spaceBetween padded-t">
+                <div class="col-4 padded-1">
+                    <h3> {{ project.title }} </h3>
+                    <p> {{ project.description }} </p>
+                </div>
+                <div class="col-5 padded-1">
+                    <p class="emphasis"><strong>Designed by: </strong> {{ project.design-by }}</p>
+                    <p class="emphasis"><strong>Built by: </strong> {{ project.build-by }} </p>
+                    <a href="{{ project.live_url }}" class="feature-button" target="_blank"> Go to site </a>
+                </div>
+            </div>
+
 
     {% endfor %}
+        </div>
 
 </section>
