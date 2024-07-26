@@ -5,19 +5,25 @@ banner_image: /images/plant.jpg
 team:
   - name: Greg
     bio: AKA 'Big Boss Coder'
-    description: Greg started upWeb with our co-founder Jane as a side hustle whilst working in a big corporate offices. 
+    description: >-
+      Greg started upWeb with our co-founder Jane as a side hustle whilst
+      working in a big corporate offices.
     profile_image: /images/profile-1.jpg
   - name: Jane
     bio: AKA 'Big Boss Designer'
-    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur eligendi natus libero, vitae esse tempore perferendis modi voluptate!
+    description: >-
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur eligendi
+      natus libero, vitae esse tempore perferendis modi voluptate!
     profile_image: /images/profile-2.jpg
   - name: Johnny
     bio: AKA 'Designer/part time model'
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et cum iste, ipsa porro quod molestiae esse harum quibusdam iure odit quae ipsum quia.
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et cum
+      iste, ipsa porro quod molestiae esse harum quibusdam iure odit quae ipsum
+      quia.
     profile_image: /images/profile-3.jpg
 about-video-id: tCZy8cAgBlM
 ---
-
 <!-- Opening banner  -->
 <section class="tall-60 grid bg-green">
     <div class="col-5-middle padded editable">
@@ -35,7 +41,7 @@ about-video-id: tCZy8cAgBlM
     
         <div class="grid flex-flip-alternate">
             <div class="col-5 padded-2"> 
-                <img src="{{ person.profile_image }}" class="profile-image">
+                <img src="{{ person.profile_image }}" class="profile-image" />
             </div>
             <div class="col-7-middle padded-1">
                 <h3> Meet {{ person.name }} </h3>
@@ -53,10 +59,12 @@ about-video-id: tCZy8cAgBlM
 
 <!---------------- Team Video section  -->
 <section class="padded bg-green center">
-    <h2 class="editable"> Watch our corny 'meet the team' video </h2>
+    <h2 class="editable">
+        Watch our corny 'meet the team' video
+    </h2>
     <p class="emphasis editable"> Feat. J-bomb the terrier </p>
 
-    <div class=""padded-1>
+    <div padded-1>
         <div class="embedtool"><iframe src="https://www.youtube.com/embed/{{ page.about-video-id }}" frameborder="0" allowfullscreen></iframe></div>
     </div>
 </section>
